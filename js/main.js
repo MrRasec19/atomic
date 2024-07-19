@@ -138,3 +138,42 @@
 
 }(jQuery));
 
+function toggleWhatsAppModal() {
+  var modal = document.getElementById("whatsapp-modal");
+  var content = document.querySelector(".whatsapp-modal-content");
+
+  if (modal.style.display === "block") {
+      modal.style.opacity = "0";
+      modal.style.transform = "scale(0.9)";
+      content.style.transform = "translateY(50px)";
+      setTimeout(function() {
+          modal.style.display = "none";
+      }, 300); // El tiempo debe coincidir con la duración de la transición
+  } else {
+      modal.style.display = "block";
+      setTimeout(function() {
+          modal.style.opacity = "1";
+          modal.style.transform = "scale(1)";
+          content.style.transform = "translateY(0)";
+      }, 10); // Pequeño delay para permitir que el cambio de estilos se registre
+  }
+}
+
+function closeWhatsAppModal() {
+  var modal = document.getElementById("whatsapp-modal");
+  var content = document.querySelector(".whatsapp-modal-content");
+  modal.style.opacity = "0";
+  modal.style.transform = "scale(0.9)";
+  content.style.transform = "translateY(50px)";
+  setTimeout(function() {
+      modal.style.display = "none";
+  }, 300); // El tiempo debe coincidir con la duración de la transición
+}
+
+// Cierra la ventana modal si el usuario hace clic fuera de la misma
+window.onclick = function(event) {
+  var modal = document.getElementById("whatsapp-modal");
+  if (event.target == modal) {
+      closeWhatsAppModal();
+  }
+}

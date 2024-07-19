@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
     <title>Atomic Devs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        crossorigin="anonymous">
     <!--====== Favicon Icon ======-->
     <link rel="shortcut icon" href="img/2.png" type="image/png">
     <!-- Bootstrap CSS -->
@@ -1313,7 +1315,26 @@
       
     </footer>
     <!-- Footer Section End --> 
+     
+<a href="javascript:void(0);" class="whatsapp-button" onclick="toggleWhatsAppModal()">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
+<div id="whatsapp-modal" class="whatsapp-modal">
+    <div class="whatsapp-modal-content">
+        <div class="whatsapp-modal-header">
+            <span class="whatsapp-modal-close" onclick="closeWhatsAppModal()">&times;</span>
+            <h2>Chat de WhatsApp</h2>
+        </div>
+        <div class="whatsapp-modal-body">
+            <p>Hola, 🖐🏻 Déjanos saber tu idea y nosotros la hacemos realidad.</p>
+        </div>
+        <div class="whatsapp-modal-footer">
+            <a href="https://api.whatsapp.com/send?phone=526621337999&text=Hola,%20deseo%20cotizar%20un%20proyecto%20de%20software" target="_blank" class="whatsapp-chat-link">Abrir WhatsApp</a>
+            <p class="powered-by">Powered by <a href="#" target="_blank">Atomic Devs</a></p>
+        </div>
+    </div>
+</div>
 
     <!-- Go To Top Link -->
     <a href="#" class="back-to-top">
