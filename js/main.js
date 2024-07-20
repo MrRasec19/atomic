@@ -177,3 +177,4 @@ window.onclick = function(event) {
       closeWhatsAppModal();
   }
 }
+
