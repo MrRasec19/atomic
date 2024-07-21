@@ -1587,7 +1587,7 @@ button:focus {
 .powered-by {
   margin-top: 10px;
   font-size: 12px;
-  color: #666;
+  color: #000; /* Color negro para el texto "Powered by" */
 }
 
 .powered-by a {
@@ -1597,4 +1597,26 @@ button:focus {
 
 .powered-by a:hover {
   text-decoration: underline;
+}
+
+.gradient-text {
+  font-weight: bold; /* Negrita para "Atomic Devs" */
+  background: linear-gradient(45deg, #800080, #0000ff, #ff00ff);
+  background-size: 200% 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-animation 3s infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
