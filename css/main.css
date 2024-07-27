@@ -337,7 +337,7 @@ button:focus {
 /* ========================================================================== 
    Scroll To Up 
    ========================================================================== */
-.back-to-top {
+/* .back-to-top {
   display: none;
   position: fixed;
   bottom: 18px;
@@ -359,8 +359,43 @@ button:focus {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-
+  transition: all 0.3s ease-in-out; } */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .back-to-top {
+    display: none; /* Asegúrate de mostrarlo en el momento adecuado con JavaScript */
+    position: fixed;
+    bottom: 18px;
+    right: 15px;
+    width: 45px;
+    height: 45px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    background: linear-gradient(95deg, #8e44ad, #3498db, #8e44ad); /* Colores más intensos: Púrpura, azul, púrpura */
+    background-size: 200% 200%; /* Aumenta el tamaño del fondo para permitir la animación */
+    box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
+    z-index: 9999999;
+    animation: gradient-animation 10s ease-in-out infinite; /* Animación del degradado más larga y suave */
+  }
+  
+  .back-to-top i {
+    color: #fff;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out; /* Transición suave para el icono */
+  }
+  
 /* ==========================================================================
    Navbar Style
    ========================================================================== */
