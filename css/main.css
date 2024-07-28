@@ -383,8 +383,8 @@ button:focus {
     cursor: pointer;
     text-align: center;
     border-radius: 4px;
-    background: linear-gradient(95deg, #8e44ad, #3498db, #8e44ad); /* Colores más intensos: Púrpura, azul, púrpura */
-    background-size: 200% 200%; /* Aumenta el tamaño del fondo para permitir la animación */
+    background: linear-gradient(45deg, #800080, #0000ff, #ff00ff, #800080); /* Colores nuevos: Púrpura, azul, fucsia, púrpura */
+    background-size: 300% 300%; /* Aumenta el tamaño del fondo para permitir la animación */
     box-shadow: 0px 8px 9px 0px rgba(96, 94, 94, 0.17);
     z-index: 9999999;
     animation: gradient-animation 10s ease-in-out infinite; /* Animación del degradado más larga y suave */
@@ -395,6 +395,8 @@ button:focus {
     font-size: 20px;
     transition: all 0.3s ease-in-out; /* Transición suave para el icono */
   }
+  
+
   
 /* ==========================================================================
    Navbar Style
