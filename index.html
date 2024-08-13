@@ -1185,10 +1185,10 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" placeholder="Presupuesto" id="budget" class="form-control" name="budget" data-error="Por favor ingresa tu presupuesto">
-                  <div class="help-block with-errors"></div>
+                    <input type="text" placeholder="Presupuesto" id="budget" class="form-control" name="budget" data-error="Por favor ingresa tu presupuesto">
+                    <div class="help-block with-errors"></div>
                 </div> 
-              </div>
+            </div>
               <div class="col-md-12">
                 <div class="form-group"> 
                   <textarea class="form-control" id="message"  name="message" placeholder="Escribe tu mensaje" rows="4" data-error="Escribe tu mensaje" required></textarea>
@@ -1379,10 +1379,10 @@
           x.parentNode.insertBefore(s, x);
         }
       }
-      
+
       document.getElementById('name').addEventListener('input', function() {
     validateField('name', 'El nombre no puede estar vacío.');
-});
+  });
 
 document.getElementById('msg_subject').addEventListener('input', function() {
     validateField('msg_subject', 'El asunto no puede estar vacío.');
@@ -1395,12 +1395,54 @@ document.getElementById('email').addEventListener('input', function() {
     }
 });
 
-document.getElementById('budget').addEventListener('input', function() {
-    validateField('budget', 'El presupuesto solo puede contener números.');
-    if (document.getElementById('budget').value !== '') {
-        validateBudget();
+const budgetField = document.getElementById('budget');
+
+// Establecer placeholder
+budgetField.placeholder = 'Presupuesto';
+budgetField.value = ''; // Inicialmente vacío
+
+budgetField.addEventListener('focus', function () {
+    // Cambiar a "$0" cuando el campo recibe foco
+    if (budgetField.value === '') {
+        budgetField.value = '$0';
     }
 });
+
+budgetField.addEventListener('input', function (e) {
+    // Reemplazar caracteres no numéricos
+    let input = e.target.value.replace(/[^0-9]/g, '');
+    if (input.length > 0) {
+        // Formatear el número con separadores de miles
+        let formattedValue = parseInt(input).toLocaleString('en-US');
+        e.target.value = '$' + formattedValue;
+        e.target.setAttribute('data-value', input); // Guardar solo el valor numérico
+    } else {
+        e.target.value = '$';
+        e.target.setAttribute('data-value', '');
+    }
+
+    // Validar que contenga solo números
+    let numericValue = budgetField.value.replace(/[^0-9]/g, '');
+    if (numericValue === '' || isNaN(numericValue) || parseFloat(numericValue) < 0) {
+        if (budgetField.value !== '$0') { // Solo mostrar error si no es "$0"
+            showError('budget', 'El presupuesto solo debe contener números.');
+        }
+    } else {
+        clearError('budget');
+    }
+});
+
+budgetField.addEventListener('blur', function () {
+    // Establecer valor por defecto si está vacío
+    if (budgetField.value === '$' || budgetField.value === '') {
+        budgetField.value = '$0';
+        budgetField.setAttribute('data-value', '0');
+    }
+
+    // Validar nuevamente al perder el foco
+    validateField('budget', 'El presupuesto solo debe contener números.');
+});
+
 
 document.getElementById('message').addEventListener('input', function() {
     validateField('message', 'El mensaje no puede estar vacío.');
@@ -1436,16 +1478,6 @@ function validateEmail() {
     }
 }
 
-function validateBudget() {
-    const presupuesto = document.getElementById('budget').value;
-    if (presupuesto && isNaN(presupuesto)) {
-        showError('budget', 'El presupuesto solo puede contener números.');
-        return false;
-    } else {
-        clearError('budget');
-        return true;
-    }
-}
 
 function showError(fieldId, message) {
     const field = document.getElementById(fieldId);
@@ -1493,20 +1525,25 @@ function enviarCorreoAsync(event) {
         hasError = true;
     }
 
-    if (!validateBudget()) {
-        hasError = true;
-    }
+    // if (!validateBudget()) {
+    //     hasError = true;
+    // }
 
     if (hasError) {
         return;
     }
+
+    function parseBudgetValue(value) {
+    // Eliminar el signo de dólar y los separadores de miles
+    return parseFloat(value.replace(/[$,]/g, '')) || 0.0;
+}
 
     const data = {
         nombre: nombre,
         asunto: asunto,
         correo: correo,
         mensaje: mensaje,
-        presupuesto: presupuesto === '' ? 0.0 : presupuesto
+        presupuesto: parseBudgetValue(presupuesto)
     };
 console.log(data);
     fetch('https://localhost:7164/api/correo/', {
