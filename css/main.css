@@ -1719,13 +1719,6 @@ button:focus {
   padding: 40px 0;
 }
 
-.h2-carousel-nuestras-tecnologias {
-  margin-bottom: 30px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: bolder;
-  color: #151948;
-}
-
 .carousel-card {
   background: linear-gradient(135deg, #6a11cb, #2575fc, #ff6ec4);
   border: none;
@@ -1767,6 +1760,9 @@ button:focus {
 .carousel-control-next-icon {
   filter: invert(100%);
 }
+
+
+
 
 
 

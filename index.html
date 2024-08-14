@@ -721,27 +721,23 @@
     <!-- Recent Showcase Section End --> 
 
     <!-- Nuestras tecnologías Inicio -->
-    <section class="carousel-section container mt-5">
-      <div class="container">
-        <!-- Start Row -->
-        <div class="row">
+<section class="carousel-section container mt-5">
+  <div class="container">
+      <!-- Start Row -->
+      <div class="row">
           <div class="col-lg-12">
-            <div class="tecnologies-text section-header text-center">  
-              <div>   
-                <h2 class="section-title">Nuestras Tecnologías</h2>
-                <!-- <div class="desc-text">
-                  <p class="gradient-text" style="font-weight: bolder;">Equipo AtomicDevs</p>  
-                  <p>Siempre listos para atender tus necesidades de negocio.</p>
-                </div> -->
-              </div> 
-            </div>
+              <div class="tecnologies-text section-header text-center">  
+                  <div>   
+                      <h2 class="section-title">Nuestras Tecnologías</h2>
+                  </div> 
+              </div>
           </div>
-        </div>
       </div>
-  <div id="techCarousel" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-          <!-- Aquí se muestran las imágenes de 1 en 1 en pantallas pequeñas y de 3 en 3 en pantallas grandes -->
+  </div>
 
+  <!-- Carrusel para pantallas grandes y medianas -->
+  <div id="techCarouselLarge" class="carousel slide d-none d-md-block" data-ride="carousel">
+      <div class="carousel-inner">
           <!-- Primer Slide (JavaScript, C#, Angular) -->
           <div class="carousel-item active">
               <div class="row justify-content-center">
@@ -753,7 +749,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-12 col-md-4 d-none d-md-block">
+                  <div class="col-12 col-md-4">
                       <div class="carousel-card">
                           <img src="../website-atomic-devs/img/tecnologias/CSharp.png" alt="C#" class="img-fluid">
                           <div class="carousel-card-body">
@@ -761,7 +757,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-12 col-md-4 d-none d-md-block">
+                  <div class="col-12 col-md-4">
                       <div class="carousel-card">
                           <img src="../website-atomic-devs/img/tecnologias/Angular.png" alt="Angular" class="img-fluid">
                           <div class="carousel-card-body">
@@ -783,7 +779,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-12 col-md-4 d-none d-md-block">
+                  <div class="col-12 col-md-4">
                       <div class="carousel-card">
                           <img src="../website-atomic-devs/img/tecnologias/SQLServer.png" alt="SQL Server" class="img-fluid">
                           <div class="carousel-card-body">
@@ -791,7 +787,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-12 col-md-4 d-none d-md-block">
+                  <div class="col-12 col-md-4">
                       <div class="carousel-card">
                           <img src="../website-atomic-devs/img/tecnologias/MySQL.png" alt="MySQL" class="img-fluid">
                           <div class="carousel-card-body">
@@ -815,21 +811,134 @@
                   </div>
               </div>
           </div>
-
       </div>
 
       <!-- Controles del Carrusel -->
-      <a class="carousel-control-prev" href="#techCarousel" role="button" data-slide="prev">
+      <a class="carousel-control-prev" href="#techCarouselLarge" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="sr-only">Anterior</span>
       </a>
-      <a class="carousel-control-next" href="#techCarousel" role="button" data-slide="next">
+      <a class="carousel-control-next" href="#techCarouselLarge" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+      </a>
+  </div>
+
+  <!-- Carrusel para pantallas pequeñas -->
+  <div id="techCarouselSmall" class="carousel slide d-md-none" data-ride="carousel">
+      <div class="carousel-inner">
+          <!-- Primer Slide (JavaScript) -->
+          <div class="carousel-item active">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card">
+                          <img src="../website-atomic-devs/img/tecnologias/Javascript.png" alt="JavaScript" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">JavaScript</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Segundo Slide (C#) -->
+          <div class="carousel-item">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card">
+                          <img src="../website-atomic-devs/img/tecnologias/CSharp.png" alt="C#" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">C#</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Tercer Slide (Angular) -->
+          <div class="carousel-item">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card">
+                          <img src="../website-atomic-devs/img/tecnologias/Angular.png" alt="Angular" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">Angular</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Cuarto Slide (PostgreSQL) -->
+          <div class="carousel-item">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card">
+                          <img src="../website-atomic-devs/img/tecnologias/PostgreSQL.png" alt="PostgreSQL" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">PostgreSQL</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Quinto Slide (SQL Server) -->
+          <div class="carousel-item">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card">
+                          <img src="../website-atomic-devs/img/tecnologias/SQLServer.png" alt="SQL Server" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">SQL Server</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Sexto Slide (MySQL) -->
+          <div class="carousel-item">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card">
+                          <img src="../website-atomic-devs/img/tecnologias/MySQL.png" alt="MySQL" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">MySQL</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Séptimo Slide (TypeScript) -->
+          <div class="carousel-item">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card">
+                          <img src="../website-atomic-devs/img/tecnologias/Typescript.png" alt="TypeScript" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">TypeScript</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Controles del Carrusel -->
+      <a class="carousel-control-prev" href="#techCarouselSmall" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#techCarouselSmall" role="button" data-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Siguiente</span>
       </a>
   </div>
 </section>
 <!-- Nuestras tecnologías Fin -->
+
 
 
 
