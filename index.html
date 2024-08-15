@@ -51,6 +51,9 @@
               </li>                            
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#showcase">Proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#clients">Clientes</a>
               </li>       
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#technologies">Tecnologías</a>
@@ -58,15 +61,15 @@
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">Equipo</a>
               </li> 
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link page-scroll" href="#blog">Blog</a>
-              </li>  
+              </li>   -->
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#contact">Contacto</a>
               </li> 
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="btn btn-singin" href="#">Descargar</a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
@@ -312,8 +315,7 @@
               <div>   
                 <h2 class="section-title">Trabajos Recientes</h2>
                 <div class="desc-text">
-                  <p>Estos son algunos de los proyectos realizados.</p>  
-                  <p>Para nuestros estimados y apreciables clientes.</p>
+                  <p>Estos son algunos de los proyectos realizados para nuestros estimados y apreciables clientes.</p>  
                 </div>
               </div> 
             </div>
@@ -720,7 +722,115 @@
     </section>
     <!-- Recent Showcase Section End --> 
 
-    <!-- Nuestras tecnologías Inicio -->
+
+<!-- Nuestros Clientes Inicio -->
+<section id="clients" class="carousel-section container mt-5">
+  <div class="container">
+      <!-- Start Row -->
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="clients-text section-header text-center">  
+                  <div>   
+                      <h2 class="section-title">Nuestros Clientes</h2>
+                      <div class="desc-text">
+                        <p>Algunos de nuestros clientes que han confiado su innovación tecnológica en <b class="gradient-text" style="font-weight: bolder;">AtomicDevs.</b></p>  
+                      </div>
+                  </div> 
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Carrusel para pantallas grandes y medianas -->
+  <div id="clientsCarouselLarge" class="carousel slide d-none d-md-block" data-ride="carousel">
+      <div class="carousel-inner">
+          <!-- Primer Slide (Supplier's City) -->
+          <div class="carousel-item active">
+              <div class="row justify-content-center">
+                  <div class="col-12 col-md-4">
+                      <div class="carousel-card-clients">
+                          <img src="../website-atomic-devs/img/clientes/SupplierCity.png" alt="Supplier's City" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">Supplier's City</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Controles del Carrusel -->
+      <a class="carousel-control-prev" href="#clientsCarouselLarge" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#clientsCarouselLarge" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+      </a>
+  </div>
+
+  <!-- Carrusel para pantallas pequeñas -->
+  <div id="clientsCarouselSmall" class="carousel slide d-md-none" data-ride="carousel">
+      <div class="carousel-inner">
+          <!-- Primer Slide (Supplier's City) -->
+          <div class="carousel-item active">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card-clients">
+                          <img src="../website-atomic-devs/img/clientes/SupplierCity.png" alt="Supplier's City" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">Supplier's City</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Segundo Slide (Algo) -->
+          <!-- <div class="carousel-item">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card">
+                          <img src="../website-atomic-devs/img/tecnologias/CSharp.png" alt="C#" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">C#</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+
+          <!-- Tercer Slide (Algo) -->
+          <!-- <div class="carousel-item">
+              <div class="row justify-content-center">
+                  <div class="col-12">
+                      <div class="carousel-card">
+                          <img src="../website-atomic-devs/img/tecnologias/Angular.png" alt="Angular" class="img-fluid">
+                          <div class="carousel-card-body">
+                              <h5 class="card-title">Angular</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+      </div>
+
+      <!-- Controles del Carrusel -->
+      <a class="carousel-control-prev" href="#clientsCarouselSmall" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#clientsCarouselSmall" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+      </a>
+  </div>
+</section>
+<!-- Nuestros Clientes Fin -->
+
+
+<!-- Nuestras tecnologías Inicio -->
 <section id="technologies" class="carousel-section container mt-5">
   <div class="container">
       <!-- Start Row -->
@@ -729,7 +839,10 @@
               <div class="tecnologies-text section-header text-center">  
                   <div>   
                       <h2 class="section-title">Nuestras Tecnologías</h2>
-                  </div> 
+                      <div class="desc-text">
+                        <p>Con nuestra preparación constante y las distintas gamas de tecnologías en las que operamos,<br>te garantizamos el éxito de tu empresa mediante nuestros proyectos innovadores.</p>  
+                      </div>
+                    </div> 
               </div>
           </div>
       </div>
@@ -742,7 +855,7 @@
           <div class="carousel-item active">
               <div class="row justify-content-center">
                   <div class="col-12 col-md-4">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/Javascript.png" alt="JavaScript" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">JavaScript</h5>
@@ -750,7 +863,7 @@
                       </div>
                   </div>
                   <div class="col-12 col-md-4">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/CSharp.png" alt="C#" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">C#</h5>
@@ -758,7 +871,7 @@
                       </div>
                   </div>
                   <div class="col-12 col-md-4">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/Angular.png" alt="Angular" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">Angular</h5>
@@ -772,7 +885,7 @@
           <div class="carousel-item">
               <div class="row justify-content-center">
                   <div class="col-12 col-md-4">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/PostgreSQL.png" alt="PostgreSQL" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">PostgreSQL</h5>
@@ -780,7 +893,7 @@
                       </div>
                   </div>
                   <div class="col-12 col-md-4">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/SQLServer.png" alt="SQL Server" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">SQL Server</h5>
@@ -788,7 +901,7 @@
                       </div>
                   </div>
                   <div class="col-12 col-md-4">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/MySQL.png" alt="MySQL" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">MySQL</h5>
@@ -802,7 +915,7 @@
           <div class="carousel-item">
               <div class="row justify-content-center">
                   <div class="col-12 col-md-4">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/Typescript.png" alt="TypeScript" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">TypeScript</h5>
@@ -831,7 +944,7 @@
           <div class="carousel-item active">
               <div class="row justify-content-center">
                   <div class="col-12">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/Javascript.png" alt="JavaScript" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">JavaScript</h5>
@@ -845,7 +958,7 @@
           <div class="carousel-item">
               <div class="row justify-content-center">
                   <div class="col-12">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/CSharp.png" alt="C#" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">C#</h5>
@@ -859,7 +972,7 @@
           <div class="carousel-item">
               <div class="row justify-content-center">
                   <div class="col-12">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/Angular.png" alt="Angular" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">Angular</h5>
@@ -873,7 +986,7 @@
           <div class="carousel-item">
               <div class="row justify-content-center">
                   <div class="col-12">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/PostgreSQL.png" alt="PostgreSQL" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">PostgreSQL</h5>
@@ -887,7 +1000,7 @@
           <div class="carousel-item">
               <div class="row justify-content-center">
                   <div class="col-12">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/SQLServer.png" alt="SQL Server" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">SQL Server</h5>
@@ -901,7 +1014,7 @@
           <div class="carousel-item">
               <div class="row justify-content-center">
                   <div class="col-12">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/MySQL.png" alt="MySQL" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">MySQL</h5>
@@ -915,7 +1028,7 @@
           <div class="carousel-item">
               <div class="row justify-content-center">
                   <div class="col-12">
-                      <div class="carousel-card">
+                      <div class="carousel-card-tech">
                           <img src="../website-atomic-devs/img/tecnologias/Typescript.png" alt="TypeScript" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">TypeScript</h5>
@@ -938,118 +1051,6 @@
   </div>
 </section>
 <!-- Nuestras tecnologías Fin -->
-
-
-
-
-
-    <!-- Client Testimoninals Section Start -->
-    <section id="testimonial" class="section">
-      <div class="container right-position">
-        <!-- Start Row -->
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <div class="video-promo-content text-center">
-
-              <a id="play-video" class="video-play-button video-popup" href="https://www.youtube.com/watch?v=Y4fodpIwal8&list=RDXCElIIYx_8s&index=13">
-                <span></span>
-              </a>
-
-            </div>
-          </div>
-        </div>
-        <!-- End Row -->
-        <!-- Start Row -->
-        <div class="row justify-content-center testimonial-area">
-          <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 pr-20 pl-20" style="overflow: hidden;padding-bottom: 60px">
-            <div id="client-testimonial" class="text-center owl-carousel">
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img src="img/testimonial/01.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img src="img/testimonial/01.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img src="img/testimonial/01.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img src="img/testimonial/01.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img src="img/testimonial/01.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimonial-item">
-                  <div class="content-inner">
-                    <p class="description">Appropriately implement one-to-one catalysts for change <br> vis-a-vis wireless catalysts for change. Enthusiastically architect <br> adaptive e-tailers after sustainable total linkage. Appropriately <br> implement one-to-one catalysts for change.</p>
-                    <div class="author-info">
-                      <h5>Tahmina Anny ; <span> UIdeck Customer</span></h5>
-                    </div>
-                  </div>
-                  <div class="client-thumb">
-                    <img src="img/testimonial/01.png" alt="">
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <!-- End Row -->
-      </div>
-    </section>
-    <!-- Client Testimoninals Section End --> 
-
 
     <!-- Team section Start -->
     <section id="team" class="section">
@@ -1174,102 +1175,6 @@
       </div>
     </section>
     <!-- Team section End -->
-
-
-    <!-- Blog Section -->
-    <section id="blog" class="section">
-      <!-- Container Starts -->
-      <div class="container">
-        <!-- Start Row -->
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="blog-text section-header text-center">  
-              <div>   
-                <h2 class="section-title">Últimas publicaciones del blog</h2>
-                <div class="desc-text">
-                  <p>Ejemplo de blog post colocado</p>  
-                  <p>Algunos de nuestros proyectos de innovación recientes.</p>
-                </div>
-              </div> 
-            </div>
-          </div>
-
-        </div>
-        <!-- End Row -->
-        <!-- Start Row -->
-        <div class="row">
-          <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/01.jpg" class="img-fluid" alt="">
-                </a>             
-              </div>
-              <div class="blog-item-text"> 
-                <h3><a href="single-post.html">How Slick Will Transform  <br>Your Business</a></h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
-                <a href="" class="read-more">5 Min read</a>
-              </div>
-              <div class="author">
-                <span class="name"><i class="lni-user"></i><a href="#">Posted by Admin</a></span>
-                <span class="date float-right"><i class="lni-calendar"></i><a href="#">10 April, 2020</a></span>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/02.jpg" class="img-fluid" alt="">
-                </a>             
-              </div>
-              <div class="blog-item-text"> 
-                <h3><a href="single-post.html">Growth Techniques for  <br>New Startups</a></h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
-                <a href="" class="read-more">5 Min read</a>
-              </div>
-              <div class="author">
-                <span class="name"><i class="lni-user"></i><a href="#">Posted by Admin</a></span>
-                <span class="date float-right"><i class="lni-calendar"></i><a href="#">10 April, 2020</a></span>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-4 col-md-6 col-xs-12 blog-item">
-            <!-- Blog Item Starts -->
-            <div class="blog-item-wrapper">
-              <div class="blog-item-img">
-                <a href="single-post.html">
-                  <img src="img/blog/03.jpg" class="img-fluid" alt="">
-                </a>             
-              </div>
-              <div class="blog-item-text"> 
-                <h3><a href="single-post.html">Writing Professional <br>Emails to Customers</a></h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
-                <a href="" class="read-more">5 Min read</a>
-              </div>
-              <div class="author">
-                <span class="name"><i class="lni-user"></i><a href="#">Posted by Admin</a></span>
-                <span class="date float-right"><i class="lni-calendar"></i><a href="#">10 April, 2020</a></span>
-              </div>
-            </div>
-            <!-- Blog Item Wrapper Ends-->
-          </div>
-          <!-- End Col -->
-
-        </div>
-        <!-- End Row -->
-      </div>
-    </section>
-    <!-- blog Section End -->
 
     <!-- Contact Us Section -->
     <section id="contact" class="section">
@@ -1439,7 +1344,7 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="site-info text-center">
-                  <p>Elaborado por <a style="font-weight: bolder;" href="#" rel="nofollow">AtomicDevs</a></p>
+                  <p>Elaborado por <a style="font-weight: bolder;" href="#" rel="nofollow">AtomicDevs</a> - Hermosillo, Sonora, México</p>
                 </div>              
                 
               </div>
