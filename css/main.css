@@ -1744,6 +1744,8 @@ button:focus {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100%;
+  background-size: 200% 200%;
+  animation: gradient-general 5s ease infinite;
 }
 
 .carousel-card-clients:hover {
@@ -1771,6 +1773,8 @@ button:focus {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100%;
+  background-size: 200% 200%;
+  animation: gradient-general 5s ease infinite;
 }
 
 .carousel-card-tech:hover {
@@ -1788,6 +1792,22 @@ button:focus {
 .carousel-card-tech:hover img {
   transform: scale(1.05);
 }
+
+/*Gradiente general para las cards del Carousel de Nuestros clientes y Nuestras tecnologías*/
+
+@keyframes gradient-general {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 
 
 
