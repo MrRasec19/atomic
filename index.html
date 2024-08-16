@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         crossorigin="anonymous">
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="img/2.png" type="image/png">
+    <link rel="shortcut icon" href="../website-atomic-devs/img/Logo_AtomicDevs_Sin_BG.png" type="image/png">
     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="css/estilosLogo.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/LineIcons.css">
@@ -26,75 +27,114 @@
   
   <body>
 
-    <!-- Header Section Start -->
-    <header id="home" class="hero-area">    
-      <div class="overlay">
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
-        <div class="container">
-          <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt=""></a>       
+<!-- Header Section Start -->
+<header id="home" class="hero-area">    
+  <div class="overlay">
+      <span></span>
+      <span></span>
+  </div>
+  <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+      <div class="container">
+          <a href="index.html" class="navbar-brand d-flex align-items-center justify-content-center">
+              <!-- Logo SVG -->
+              <div class="logo-container">
+                  <svg viewBox="0 0 100 100" class="logo-svg">
+                      <g class="shadow">
+                          <ellipse cx="50" cy="100" rx="50" ry="5"/>
+                      </g>
+                      <g class="core">
+                          <circle cx="50" cy="50" r="10"/>
+                          <circle cx="50" cy="50" r="10"/>
+                      </g>
+                      <g class="ring ring1">
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                      </g>
+                      <g class="ring ring2">
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                      </g>
+                      <g class="ring ring3">
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                          <ellipse cx="50" cy="50" rx="20" ry="50"/>
+                      </g>
+                      <filter id="blur" x="-20%" y="-20%" width="140%" height="140%">
+                          <feGaussianBlur stdDeviation="2"/>
+                      </filter>
+                      <defs>
+                          <linearGradient id="core-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" style="stop-color:#8A2BE2;stop-opacity:1"/> <!-- Púrpura fosforescente -->
+                              <stop offset="50%" style="stop-color:#FF00FF;stop-opacity:1"/> <!-- Fucsia fosforescente -->
+                              <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:1"/> <!-- Azul fosforescente -->
+                          </linearGradient>
+                          <linearGradient id="orbit-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                              <stop offset="0%" style="stop-color:#8A2BE2;stop-opacity:1"/> <!-- Púrpura fosforescente -->
+                              <stop offset="50%" style="stop-color:#FF00FF;stop-opacity:1"/> <!-- Fucsia fosforescente -->
+                              <stop offset="100%" style="stop-color:#00FFFF;stop-opacity:1"/> <!-- Azul fosforescente -->
+                          </linearGradient>
+                      </defs>
+                  </svg>
+              </div>
+              <!-- Logo de texto -->
+              <img src="../website-atomic-devs/img/Title_AtomicDevs_Sin_BG.png" alt="AtomicDevs" class="logo-text">
+          </a>       
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="lni-menu"></i>
+              <i class="lni-menu"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto w-100 justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#home">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#services">Nosotros</a>
-              </li>  
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#features">Servicios</a>
-              </li>                            
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#showcase">Proyectos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#clients">Clientes</a>
-              </li>       
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#technologies">Tecnologías</a>
-              </li>     
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#team">Equipo</a>
-              </li> 
-              <!-- <li class="nav-item">
-                <a class="nav-link page-scroll" href="#blog">Blog</a>
-              </li>   -->
-              <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Contacto</a>
-              </li> 
-              <!-- <li class="nav-item">
-                <a class="btn btn-singin" href="#">Descargar</a>
-              </li> -->
-            </ul>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#home">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#services">Nosotros</a>
+                  </li>  
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#features">Servicios</a>
+                  </li>                            
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#showcase">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#clients">Clientes</a>
+                  </li>       
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#technologies">Tecnologías</a>
+                  </li>     
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#team">Equipo</a>
+                  </li> 
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="#contact">Contacto</a>
+                  </li> 
+              </ul>
           </div>
-        </div>
-      </nav>  
-      <div class="container">      
-        <div class="row space-100">
+      </div>
+  </nav>     
+  <div class="container">
+      <div class="row space-100">
+          <!-- Sección de texto -->
           <div class="col-lg-6 col-md-12 col-xs-12">
-            <div class="contents">
-              <h2 class="head-title">Somos el inicio y el cambio de innovación tecnológica que necesitas.</h2>
-              <p>Lidera tu negocio hacia la grandeza.</p>
-              <!-- <div class="header-button">
-                <a href="https://rebrand.ly/slick-ud" rel="nofollow" target="_blank" class="btn btn-border-filled">Purchase Now</a>
-                <a href="https://rebrand.ly/slick-ud" rel="nofollow" target="_blank" class="btn btn-border page-scroll">Learn More</a>
-              </div> -->
-            </div>
+              <div class="contents">
+                  <h2 class="head-title">Somos el inicio y el cambio de innovación tecnológica que necesitas.</h2>
+                  <p>Lidera tu negocio hacia la grandeza.</p>
+              </div>
           </div>
-          <div class="col-lg-6 col-md-12 col-xs-12 p-0">
-            <div class="intro-img">
-              <img src="img/intro.png" alt="">
-            </div>            
+          
+          <!-- Imagen -->
+          <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center align-items-center mt-5">
+              <img src="../website-atomic-devs/img/Inicial_AtomicDevs.jpg" alt="AtomicDevsTech" class="img-fluid rounded-circle shadow-custom">
           </div>
-        </div> 
-      </div>             
-    </header>
-    <!-- Header Section End --> 
+      </div>
+  </div>          
+</header>
+<!-- Header Section End -->
 
 
     <!-- Services Section Start -->
@@ -151,31 +191,25 @@
     <!-- Business Plan Section Start -->
     <section id="business-plan">
       <div class="container">
-
-        <div class="row">
-          <!-- Start Col -->
-          <div class="col-lg-6 col-md-12 pl-0 pt-70 pr-5">
-            <div class="business-item-img">
-              <img src="img/business/business-img.png" class="img-fluid" alt="">
-            </div>
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-6 col-md-12 pl-4">
+        <div class="row space-100">
+          <!-- Sección de texto -->
+          <!-- Imagen -->
+        <div class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center align-items-center">
+          <img src="../website-atomic-devs/img/Negocio_AtomicDevs.jpg" class="img-fluid rounded-circle shadow-custom" alt="AtomicDevsNegocio">            
+        </div>
+          <div class="col-lg-6 col-md-12 col-xs-12">
             <div class="business-item-info">
               <h3 class="gradient-text" style="font-weight: bolder;">AtomicDevs</h3>
               <p>Somos un equipo centrado en brindar nuestros servicios de desarrollo de software a la medida para hacer que tu empresa sea beneficiada del uso de la tecnología para hacer más efectivos algunos procesos críticos o gestión de recursos importantes.
                  Sin limitaciones en tu rubro y/o enfoques de áreas de oportunidad, <b class="gradient-text" style="font-weight: bolder;">AtomicDevs</b> siempre está preparado para hacer que tu empresa sea un impulso de innovación atómica que te lleve a la facilidad de crecimiento progresivo.
               </p>
-
-              <!-- <a class="btn btn-common" href="#">download</a> -->
-              <a class="btn btn-common nav-link page-scroll" href="#contact">Contactar</a>
+               <!-- <a class="btn btn-common" href="#">download</a> -->
+               <a class="btn btn-common nav-link page-scroll" href="#contact">Contactar</a>
             </div>
           </div>
-          <!-- End Col -->
 
         </div>
-      </div>
+      </div> 
     </section>
     <!-- Business Plan Section End -->
 
@@ -813,7 +847,7 @@
       <!-- Container Starts -->
       <div class="container">
         <!-- Start Row -->
-        <div class="row">
+        <div class="row space-100">
           <div class="col-lg-12">
             <div class="contact-text section-header text-center">  
               <div>   
@@ -825,75 +859,67 @@
               </div> 
             </div>
           </div>
-
         </div>
         <!-- End Row -->
         <!-- Start Row -->
         <div class="row">
           <!-- Start Col -->
           <div class="col-lg-6 col-md-12">
-          <form id="contactForm">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required data-error="Por favor ingresa tu nombre">
-                  <div class="help-block with-errors"></div>
-                </div>                                 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" placeholder="Asunto" id="msg_subject" class="form-control" name="msg_subject" required data-error="Por favor ingresar asunto">
-                  <div class="help-block with-errors"></div>
-                </div> 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Correo" required data-error="Por favor ingresa tu correo">
-                  <div class="help-block with-errors"></div>
-                </div>                                 
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" placeholder="Presupuesto" id="budget" class="form-control" name="budget" data-error="Por favor ingresa tu presupuesto">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required data-error="Por favor ingresa tu nombre">
                     <div class="help-block with-errors"></div>
-                </div> 
-            </div>
-              <div class="col-md-12">
-                <div class="form-group"> 
-                  <textarea class="form-control" id="message"  name="message" placeholder="Escribe tu mensaje" rows="4" data-error="Escribe tu mensaje" required></textarea>
-                  <div class="help-block with-errors"></div>
+                  </div>                                 
                 </div>
-                <div class="submit-button">
-                  <button class="btn btn-common"  onclick="enviarCorreoAsync(event)" id="submit" type="submit">Enviar</button>
-                  <div id="msgSubmit" class="h3 hidden"></div> 
-                  <div class="clearfix"></div> 
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" placeholder="Asunto" id="msg_subject" class="form-control" name="msg_subject" required data-error="Por favor ingresar asunto">
+                    <div class="help-block with-errors"></div>
+                  </div> 
                 </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Correo" required data-error="Por favor ingresa tu correo">
+                    <div class="help-block with-errors"></div>
+                  </div>                                 
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                      <input type="text" placeholder="Presupuesto" id="budget" class="form-control" name="budget" data-error="Por favor ingresa tu presupuesto">
+                      <div class="help-block with-errors"></div>
+                  </div> 
               </div>
-            </div>            
-          </form>
+                <div class="col-md-12">
+                  <div class="form-group"> 
+                    <textarea class="form-control" id="message" name="message" placeholder="Escribe tu mensaje" rows="4" data-error="Escribe tu mensaje" required></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="submit-button">
+                    <button class="btn btn-common" onclick="enviarCorreoAsync(event)" id="submit" type="submit">Enviar</button>
+                    <div id="msgSubmit" class="h3 hidden"></div> 
+                    <div class="clearfix"></div> 
+                  </div>
+                </div>
+              </div>            
+            </form>
           </div>
           <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-1">
-            
-          </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-4 col-md-12">
+    
+          <!-- Start Col for Image -->
+          <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center mt-2">
             <div class="contact-img">
-              <img src="img/contact/01.png" class="img-fluid" alt="">
+              <img src="../website-atomic-devs/img/Contacto_AtomicDevs.jpg" alt="AtomicDevsContacto" class="img-fluid rounded-circle shadow-custom">
             </div>
           </div>
-          <!-- End Col -->
-          <!-- Start Col -->
-          <div class="col-lg-1">
-          </div>
-          <!-- End Col -->
-
+          <!-- End Col for Image -->
         </div>
         <!-- End Row -->
       </div>
+      <!-- Container Ends -->
     </section>
+    
     <!-- Contact Us Section End -->
 
     <!-- Footer Section Start -->
@@ -908,12 +934,12 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               
               <div class="footer-logo">
-               <img src="img/footer-logo.png" alt="">
+               <img src="../website-atomic-devs/img/Title_AtomicDevs_Sin_BG.png" alt="AtomicDevs" class="logo">
               </div>
             </div>
              <!-- End Col -->
               <!-- Start Col -->
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <!-- <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <div class="widget">
                 <h3 class="block-title">Compañía</h3>
                 <ul class="menu">
@@ -923,14 +949,14 @@
                   <li><a href="#">- Prensa</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
              <!-- End Col -->
               <!-- Start Col -->
             <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <div class="widget">
                 <h3 class="block-title">Productos</h3>
                 <ul class="menu">
-                  <li><a href="#">  - Servicio Personalizado</a></li>
+                  <li><a href="#">-Servicio Personalizado</a></li>
                   <li><a href="#">- Empresa</a></li>
                   <li><a href="#">- Precio</a></li>
                   <li><a href="#">- Seguridad</a></li>
@@ -940,7 +966,7 @@
             </div>
              <!-- End Col -->
               <!-- Start Col -->
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <!-- <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <div class="widget">
                 <h3 class="block-title">Descargar App</h3>
                 <ul class="menu">
@@ -951,10 +977,10 @@
                   <li><a href="#">- IOS Store</a></li>
                 </ul>
               </div>
-            </div>
+            </div> -->
              <!-- End Col -->
               <!-- Start Col -->
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+            <!-- <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <div class="widget">
                 <h3 class="block-title">Suscríbete Ahora </h3>
                 <p>Suscríbete para estar al tanto de las novedades tecnológicas que AtomicDevs tiene para tí. </p>
@@ -963,7 +989,7 @@
                   <span><i class="lni-chevron-right"></i></span>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- End Col -->
           </div>
           <!-- End Row -->
@@ -976,9 +1002,22 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="site-info text-center">
-                  <p>Elaborado por <a style="font-weight: bolder;" href="#" rel="nofollow">AtomicDevs</a> - Hermosillo, Sonora, México</p>
+                  <p>Elaborado por <a style="font-weight: bolder;">AtomicDevs</a> - Hermosillo, Sonora, México</p>
                 </div>              
-                
+              </div>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-12">
+                    <h5 class="social-title">Síguenos en nuestras redes sociales</h5>
+                  </div>
+                  <div class="col-12">
+                    <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- End Col -->
             </div>
