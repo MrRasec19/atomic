@@ -642,7 +642,7 @@ button:focus {
     padding: 220px 0; }
     .hero-area .contents h2 {
       color: #fff;
-      font-size: 38px;
+      font-size: 30px;
       font-weight: 600;
       line-height: 60px;
       margin-bottom: 20px; }
@@ -2001,3 +2001,5 @@ button:focus {
     margin-bottom: 5px;
   }
 }
+
+

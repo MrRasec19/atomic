@@ -178,4 +178,38 @@ window.onclick = function(event) {
   }
 }
 
+// const typedDescripcion1 = new Typed('#typedDescripcion1', {
+//  strings:[
+//   '<h2 data-aos="fade-right" class="head-title">Somos el inicio y el cambio de innovación tecnológica que necesitas.</h2><br>',
+//   '<p data-aos="fade-right">Lidera tu negocio hacia la grandeza.</p>'       
+//  ],
+//  //stringsElement:'#descripcion-negocio', //ID del elemento que contiene cadenas de texto a mostrar.
+//  typeSpeed:50,//Velocidad en milisegundos para colocar una letra.
+//  startDelay:300,//Tiempo de retraso en iniciar la animación. Aplica también cuándo termina y vuelve a iniciar.
+//  backSpeed:50,//Velocidad en milisegundos para eliminar una letra.
+//  smartBackspace:true,//Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+//  shuffle:false,//Alterar el órden en el que escribe las palabras
+//  backDelay:1500,//Tiempo de espera después de escribir cada palabra
+//  loop:true,//Repetir el array de strings
+//  loopCount:false,//Cantidad de veces a repetir el array, false = infinito
+//  showCursor:true,//Mostrar cursor palpitando
+//  cursorChar:'|', //Caracter para el cursor
+//  contentType:'html'//'html' o null para texto sin formato
+// });
+
+const typedDescripcion2 = new Typed('#typed', {
+  
+  stringsElement:'#typed-strings', //ID del elemento que contiene cadenas de texto a mostrar.
+  typeSpeed:30,//Velocidad en milisegundos para colocar una letra.
+  startDelay:300,//Tiempo de retraso en iniciar la animación. Aplica también cuándo termina y vuelve a iniciar.
+  backSpeed:20,//Velocidad en milisegundos para eliminar una letra.
+  smartBackspace:true,//Eliminar solamente las palabras que sean nuevas en una cadena de texto.
+  shuffle:false,//Alterar el órden en el que escribe las palabras
+  backDelay:1500,//Tiempo de espera después de escribir cada palabra
+  loop:true,//Repetir el array de strings
+  loopCount:false,//Cantidad de veces a repetir el array, false = infinito
+  showCursor:true,//Mostrar cursor palpitando
+  cursorChar:'|', //Caracter para el cursor
+  contentType:'html'//'html' o null para texto sin formato
+ });
 
