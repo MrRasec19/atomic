@@ -59,6 +59,7 @@
       </div>
       <nav
         class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar"
+      
       >
         <div class="container">
           <a
@@ -66,7 +67,7 @@
             class="navbar-brand d-flex align-items-center justify-content-center"
           >
             <!-- Logo SVG -->
-            <div class="logo-container" data-aos="fade-up">
+            <div class="logo-container" data-aos="fade-up" style="transform: scale(.9);">
               <svg viewBox="0 0 100 100" class="logo-svg">
                 <g class="shadow">
                   <ellipse cx="50" cy="100" rx="50" ry="5" />
@@ -149,7 +150,7 @@
             <!-- Logo de texto -->
             <img
               data-aos="fade-up"
-              src="../img/Title_AtomicDevs_Sin_BG.png"
+              src="/img/Title_AtomicDevs_Sin_BG.png"
               alt="AtomicDevs"
               class="logo-text"
             />
@@ -163,6 +164,7 @@
             aria-controls="navbarCollapse"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            style="border: none;"
           >
             <i class="lni-menu"></i>
           </button>
@@ -230,7 +232,7 @@
             data-aos="fade-left"
           >
             <img
-              src="../img/Inicial_AtomicDevs.jpg"
+              src="img/Inicial_AtomicDevs.jpg"
               alt="AtomicDevsTech"
               class="img-fluid rounded-circle shadow-custom w-75"
             />
@@ -300,7 +302,8 @@
                 -Compromiso<br />-Disposición<br />-Dedicación<br />-Responsabilidad<br />-Constancia<br />-Persistencia<br />
                 -Comprensión<br />-Orientación a resultados<br />-Orientación al
                 cliente<br />-Honestidad<br />-Calidad<br />
-                -Diferenciación<br />-Pasión<br />-Transparencia
+                -Diferenciación<br />-Pasión<br />-Transparencia<br />
+                <span id="btnVerMas" style="font-weight: bold; color: #64c297; text-decoration: underline 2px; cursor: pointer;">Ver mas</span> 
               </p>
               <p>
                 Todos nuestros servicios y productos están orientados a proveer
@@ -310,10 +313,7 @@
                 >
                 nos avalan. Sin resultados no hay victoria.
               </p>
-            </div>
-            <div class="row justify-content-center mt-2">
-              <button id="btnVerMas" class="btn btn-success" style="border: solid 1px;">Ver más</button>
-              <button id="btnVerMenos" class="btn btn-success d-none" style="border: solid 1px;">Ver menos</buttonid=>
+              <span id="btnVerMenos" style="font-weight: bold; color: #64c297; display: none; text-decoration: underline 2px; cursor: pointer;">Ver menos</span>
             </div>
           </div>
           
@@ -334,7 +334,7 @@
           >
             <img
               data-aos="flip-left"
-              src="../img/Negocio_AtomicDevs.jpg"
+              src="img/Negocio_AtomicDevs.jpg"
               class="img-fluid rounded-circle shadow-custom w-75"
               alt="AtomicDevsNegocio"
             />
@@ -552,11 +552,11 @@
               <div class="item">
                 <div class="screenshot-thumb" data-aos="fade-up">
                   <img
-                    src="../img/showcase/Proyecto_SupplierCity.png"
+                    src="/img/showcase/Proyecto_SupplierCity.png"
                     class="img-fluid"
                     alt="App Vacaciones Supplier's City"
                   />
-                  <div class="hover-content text-center">
+                  <owl-wrapperdiv class="hover-content text-center">
                     <div class="fancy-table">
                       <div class="table-cell">
                         <div class="single-text">
@@ -565,15 +565,16 @@
                         </div>
                         <div class="zoom-icon">
                           <a
+                            style="text-decoration: none;"
                             class="lightbox"
-                            href="../img/showcase/Proyecto_SupplierCity.png"
+                            href="/img/showcase/Proyecto_SupplierCity.png"
                             ><i class="lni-zoom-in"></i
                           ></a>
-                          <a href="#"><i class="lni-link"></i></a>
+                          <a style="cursor: pointer;"><i class="lni-link"></i></a>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </owl-wrapperdiv>
                 </div>
               </div>
             </div>
@@ -623,7 +624,7 @@
               <div class="col-12 col-md-4">
                 <div class="carousel-card-clients">
                   <img
-                    src="../img/clientes/SupplierCity.png"
+                    src="/img//clientes/SupplierCity.png"
                     alt="Supplier's City"
                     class="img-fluid"
                   />
@@ -670,7 +671,7 @@
               <div class="col-12">
                 <div class="carousel-card-clients">
                   <img
-                    src="../img/clientes/SupplierCity.png"
+                    src="/img/clientes/SupplierCity.png"
                     alt="Supplier's City"
                     class="img-fluid"
                   />
@@ -687,7 +688,7 @@
               <div class="row justify-content-center">
                   <div class="col-12">
                       <div class="carousel-card">
-                          <img src="../website-atomic-devs/img/tecnologias/CSharp.png" alt="C#" class="img-fluid">
+                          <img src="../img/tecnologias/CSharp.png" alt="C#" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">C#</h5>
                           </div>
@@ -701,7 +702,7 @@
               <div class="row justify-content-center">
                   <div class="col-12">
                       <div class="carousel-card">
-                          <img src="../website-atomic-devs/img/tecnologias/Angular.png" alt="Angular" class="img-fluid">
+                          <img src="../img/tecnologias/Angular.png" alt="Angular" class="img-fluid">
                           <div class="carousel-card-body">
                               <h5 class="card-title">Angular</h5>
                           </div>
@@ -771,7 +772,7 @@
               <div class="col-12 col-md-4">
                 <div class="carousel-card-tech text-center">
                   <img
-                    src="../img/tecnologias/Javascript.png"
+                    src="/img/tecnologias/Javascript.png"
                     alt="JavaScript"
                     class="img-fluid w-50"
                   />
@@ -783,7 +784,7 @@
               <div class="col-12 col-md-4">
                 <div class="carousel-card-tech text-center">
                   <img
-                    src="../img/tecnologias/CSharp.png"
+                    src="/img/tecnologias/CSharp.png"
                     alt="C#"
                     class="img-fluid w-50"
                   />
@@ -795,7 +796,7 @@
               <div class="col-12 col-md-4">
                 <div class="carousel-card-tech text-center">
                   <img
-                    src="../img/tecnologias/Angular.png"
+                    src="/img/tecnologias/Angular.png"
                     alt="Angular"
                     class="img-fluid w-50"
                   />
@@ -813,7 +814,7 @@
               <div class="col-12 col-md-4">
                 <div class="carousel-card-tech text-center">
                   <img
-                    src="../img/tecnologias/PostgreSQL.png"
+                    src="/img/tecnologias/PostgreSQL.png"
                     alt="PostgreSQL"
                     class="img-fluid w-50"
                   />
@@ -825,7 +826,7 @@
               <div class="col-12 col-md-4">
                 <div class="carousel-card-tech text-center">
                   <img
-                    src="../img/tecnologias/SQLServer.png"
+                    src="/img/tecnologias/SQLServer.png"
                     alt="SQL Server"
                     class="img-fluid w-50"
                   />
@@ -837,7 +838,7 @@
               <div class="col-12 col-md-4">
                 <div class="carousel-card-tech text-center">
                   <img
-                    src="../img/tecnologias/MySQL.png"
+                    src="/img/tecnologias/MySQL.png"
                     alt="MySQL"
                     class="img-fluid w-50"
                   />
@@ -855,7 +856,7 @@
               <div class="col-12 col-md-4">
                 <div class="carousel-card-tech text-center">
                   <img
-                    src="../img/tecnologias/Typescript.png"
+                    src="/img/tecnologias/Typescript.png"
                     alt="TypeScript"
                     class="img-fluid w-50"
                   />
@@ -902,7 +903,7 @@
               <div class="col-12">
                 <div class="carousel-card-tech">
                   <img
-                    src="../img/tecnologias/Javascript.png"
+                    src="/img/tecnologias/Javascript.png"
                     alt="JavaScript"
                     class="img-fluid"
                   />
@@ -920,7 +921,7 @@
               <div class="col-12">
                 <div class="carousel-card-tech">
                   <img
-                    src="../img/tecnologias/CSharp.png"
+                    src="/img/tecnologias/CSharp.png"
                     alt="C#"
                     class="img-fluid"
                   />
@@ -938,7 +939,7 @@
               <div class="col-12">
                 <div class="carousel-card-tech">
                   <img
-                    src="../img/tecnologias/Angular.png"
+                    src="/img/tecnologias/Angular.png"
                     alt="Angular"
                     class="img-fluid"
                   />
@@ -956,7 +957,7 @@
               <div class="col-12">
                 <div class="carousel-card-tech">
                   <img
-                    src="../img/tecnologias/PostgreSQL.png"
+                    src="/img/tecnologias/PostgreSQL.png"
                     alt="PostgreSQL"
                     class="img-fluid"
                   />
@@ -974,7 +975,7 @@
               <div class="col-12">
                 <div class="carousel-card-tech">
                   <img
-                    src="../img/tecnologias/SQLServer.png"
+                    src="/img/tecnologias/SQLServer.png"
                     alt="SQL Server"
                     class="img-fluid"
                   />
@@ -992,7 +993,7 @@
               <div class="col-12">
                 <div class="carousel-card-tech">
                   <img
-                    src="../img/tecnologias/MySQL.png"
+                    src="/img/tecnologias/MySQL.png"
                     alt="MySQL"
                     class="img-fluid"
                   />
@@ -1010,7 +1011,7 @@
               <div class="col-12">
                 <div class="carousel-card-tech">
                   <img
-                    src="../img/tecnologias/Typescript.png"
+                    src="/img/tecnologias/Typescript.png"
                     alt="TypeScript"
                     class="img-fluid"
                   />
@@ -1299,9 +1300,10 @@
           >
             <div class="contact-img" data-aos="zoom-in-up">
               <img
-                src="../img/Contacto_AtomicDevs.jpg"
+                src="/img/Contacto_AtomicDevs.jpg"
                 alt="AtomicDevsContacto"
                 class="img-fluid rounded-circle shadow-custom w-75 ml-5"
+                style="transform: scale(.8);"
               />
             </div>
           </div>
@@ -1325,7 +1327,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
               <div class="footer-logo" data-aos="fade-up">
                 <img
-                  src="../img/Title_AtomicDevs_Sin_BG.png"
+                  src="/img/Title_AtomicDevs_Sin_BG.png"
                   alt="AtomicDevs"
                   class="logo"
                 />
@@ -1482,6 +1484,28 @@
       <div class="loader" id="loader-1"></div>
     </div>
     <!-- End Preloader -->
+
+    <!-- JS VANILLA -->
+     <script>
+      const contentCard = document.querySelector("#value-content");
+      const txtVerMas = document.querySelector("#btnVerMas");
+      const txtVerMenos = document.querySelector("#btnVerMenos");
+
+      txtVerMas.addEventListener("click", () => {
+        txtVerMas.style.display = 'none';
+        txtVerMenos.style.display = 'inline-block';
+        contentCard.classList.remove('h-75');
+      });
+
+      txtVerMenos.addEventListener("click", () => {
+        txtVerMenos.style.display = 'none';
+        txtVerMas.style.display = 'inline-block';
+        contentCard.classList.add('h-75');
+      });
+
+
+     </script>
+    <!-- End JS VANILLA -->
 
     <!-- JS bot -->
     <script>
