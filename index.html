@@ -468,10 +468,11 @@
                 <i class="lni-layers"></i>
               </div>
               <div class="feature-info float-left">
-                <h4 data-aos="fade-up">Desarrollo de Web API's RESTful</h4>
+                <h4 data-aos="fade-up">Desarrollo de Web API's</h4>
                 <p data-aos="fade-up">
                   Construimos tus Web API's para conectar<br />tus servicios
                   hacia distintos tipos de aplicaciones.
+                  Incluyendo: <strong style="color: #000000;">RESTful, GraphQL y gRPC</strong>.
                 </p>
               </div>
             </div>
@@ -489,7 +490,7 @@
               <div class="feature-info float-left">
                 <h4 data-aos="fade-up">Desarrollo a la Medida</h4>
                 <p data-aos="fade-up">
-                  Consturimos tu aplicación adaptable<br />al 100% de tus
+                  Construimos tu aplicación adaptable<br />al 100% de tus
                   necesidades de negocio.
                 </p>
               </div>
@@ -865,10 +866,50 @@
                   </div>
                 </div>
               </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel-card-tech text-center">
+                  <img
+                    src="./img/tecnologias/GraphQL.png"
+                    alt="GraphQL"
+                    class="img-fluid w-50"
+                  />
+                  <div class="carousel-card-body">
+                    <h5 class="card-title">GraphQL</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="carousel-card-tech text-center">
+                  <img
+                    src="./img/tecnologias/gRPC.png"
+                    alt="gRPC"
+                    class="img-fluid w-50"/>
+                  <div class="carousel-card-body">
+                    <h5 class="card-title">gRPC</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-12 col-md-4">
+                <div class="carousel-card-tech text-center">
+                  <img
+                    src="./img/tecnologias/RESTful.png"
+                    alt="RESTful"
+                    class="img-fluid w-50"/>
+                  <div class="carousel-card-body">
+                    <h5 class="card-title">RESTful</h5>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
+        
         <!-- Controles del Carrusel -->
         <a
           class="carousel-control-prev"
@@ -1017,6 +1058,55 @@
                   />
                   <div class="carousel-card-body">
                     <h5 class="card-title">TypeScript</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="carousel-card-tech">
+                  <img
+                    src="./img/tecnologias/GraphQL.png"
+                    alt="GraphQL"
+                    class="img-fluid"
+                  />
+                  <div class="carousel-card-body">
+                    <h5 class="card-title">GraphQL</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="carousel-card-tech">
+                  <img
+                    src="./img/tecnologias/gRPC.png"
+                    alt="gRPC"
+                    class="img-fluid"
+                  />
+                  <div class="carousel-card-body">
+                    <h5 class="card-title">gRPC</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-12">
+                <div class="carousel-card-tech">
+                  <img
+                    src="./img/tecnologias/RESTful.png"
+                    alt="RESTful"
+                    class="img-fluid"
+                  />
+                  <div class="carousel-card-body">
+                    <h5 class="card-title">RESTful</h5>
                   </div>
                 </div>
               </div>
@@ -1400,7 +1490,7 @@
                 <div class="site-info text-center" data-aos="fade-right">
                   <p>
                     Elaborado con ❤ por
-                    <a style="font-weight: bolder">&copy; 2024 AtomicDevs</a> -
+                    <a style="font-weight: bolder">&copy; <span id="current-year"></span> AtomicDevs</a> -
                     Todos los derechos reservados - Hermosillo, Sonora, México
                   </p>
                 </div>
@@ -1449,12 +1539,12 @@
           </div>
           <div class="whatsapp-modal-body" data-aos="fade-up">
             <p>
-              Hola, 🖐🏻 Déjanos saber tu idea y nosotros la hacemos realidad.
+              Hola, 🖐🏻 Cuéntanos tu idea y nosotros la hacemos realidad.
             </p>
           </div>
           <div class="whatsapp-modal-footer" data-aos="fade-up">
             <a
-              href="https://api.whatsapp.com/send?phone=526621337999&text=Hola,%20deseo%20cotizar%20un%20proyecto%20de%20software"
+              href="https://api.whatsapp.com/send?phone=526621337999&text=Hola,%20por%20favor%20cuéntanos%20tu%20idea:"
               target="_blank"
               class="whatsapp-chat-link"
               >Abrir WhatsApp</a
@@ -1532,6 +1622,11 @@
           x.parentNode.insertBefore(s, x);
         }
       }
+
+       // Obtener el año actual
+  const year = new Date().getFullYear();
+  // Insertar el año en el elemento con id "current-year"
+  document.getElementById("current-year").textContent = year;
 
       document.getElementById("name").addEventListener("input", function () {
         validateField("name", "El nombre no puede estar vacío.");

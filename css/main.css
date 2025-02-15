@@ -1746,7 +1746,7 @@ button:focus {
   display: inline-block;
   padding: 10px 20px;
   background: #25d366;
-  color: #fff;
+  color: #000;
   text-decoration: none;
   border-radius: 5px;
   transition: background 0.3s;
@@ -1754,6 +1754,8 @@ button:focus {
 
 .whatsapp-chat-link:hover {
   background: #128c7e;
+  text-decoration: none;
+  color: #000958;
 }
 
 .powered-by {
