@@ -435,17 +435,10 @@ button:focus {
 
 @media screen and (min-width: 990px) {
   .menu-bg {
-    background-color: #000;
+    html {
+      scroll-behavior: smooth;
   }
-}
-
-.menu-bg {
-  background: linear-gradient(135deg, #681cee, #000958, #1875f6) ;
-  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
-  padding: 5px;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  }
 }
 
 .menu-bg .menu-button {
