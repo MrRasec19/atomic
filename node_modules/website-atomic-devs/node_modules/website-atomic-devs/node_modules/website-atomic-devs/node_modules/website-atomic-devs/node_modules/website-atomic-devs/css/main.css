@@ -40,7 +40,7 @@ a {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
-h1, h2, h3, h4, h5 {
+h1, h1, h3, h4, h5 {
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   font-weight: 400;
@@ -536,72 +536,11 @@ button:focus {
 }
 
 /* Estilos para el menú hamburguesa en pantallas pequeñas */
-@media (max-width: 1300px) {
-  .navbar-expand-md .navbar-nav {
-    display: none; /* Oculta el menú de navegación en pantallas pequeñas */
-  }
-
-  .navbar-expand-md .navbar-toggler {
-    display: block; /* Asegura que el botón de menú hamburguesa sea visible */
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 3px;
-    margin: 5px;
-    cursor: pointer;
-    float: right;
-    z-index: 10000; /* Asegura que el botón esté encima de otros elementos */
-  }
-
-  .navbar-expand-md .navbar-toggler i {
-    color: #fff !important; /* Color del icono del botón de menú hamburguesa */
-  }
-
-  .navbar-expand-md .navbar-collapse {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinea los elementos al inicio del menú */
-    width: 100%;
-    background: linear-gradient(135deg, #681cee, #000958, #1875f6) !important; /* Fondo del menú colapsado */
-    position: fixed; /* Hace que el menú se superponga */
-    top: 0;
-    left: 0;
-    height: 100vh; /* Abarca toda la altura de la pantalla */
-    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es mayor que la altura */
-    z-index: 9999; /* Asegura que el menú esté encima de otros elementos */
-    transform: translateY(-100%); /* Inicialmente oculta el menú fuera de la pantalla arriba */
-    transition: transform 0.3s ease; /* Animación para mostrar/ocultar el menú */
-  }
-
-  .navbar-expand-md .navbar-collapse.show {
-    transform: translateY(0); /* Muestra el menú cuando está descolapsado */
-  }
-
-  .navbar-expand-md .navbar-nav {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    list-style: none; /* Elimina los puntos de lista predeterminados */
-  }
-
-  .navbar-expand-md .nav-item {
-    width: 100%; /* Asegura que cada ítem ocupe el ancho completo del menú */
-    margin: 0; /* Elimina el margen para que los ítems estén más cerca unos de otros */
-  }
-
-  .navbar-expand-md .nav-link {
-    font-size: 16px; /* Ajusta el tamaño del texto en pantallas pequeñas */
-    padding: 0px 0px; /* Ajusta el espaciado interno de los enlaces */
-    color: #ffffff; /* Color del texto del enlace */
-    display: block; /* Hace que el enlace ocupe todo el ancho del ítem */
-  }
-
-  .navbar-expand-md .nav-link:hover {
-    color: #3c9cfd; /* Color del enlace al pasar el ratón sobre él */
+@media screen and (max-width: 1200px) {
+  .content-navbar {
+    display: none !important;
   }
 }
-
 
 
 
@@ -646,7 +585,7 @@ button:focus {
       left: 3%; }
   .hero-area .contents {
     padding: 220px 0; }
-    .hero-area .contents h2 {
+    .hero-area .contents h1 {
       color: #fff;
       font-size: 30px;
       font-weight: 600;
@@ -916,7 +855,7 @@ button:focus {
     z-index: 12;
     top: 260px;
     margin: 0px auto; }
-  #showcase .showcase-text h2 {
+  #showcase .showcase-text h1 {
     color: #fff; }
   #showcase .showcase-text p {
     color: #fff; }
@@ -1378,7 +1317,7 @@ button:focus {
 /* ==========================================================================
    Blog single post section
    ========================================================================== */
-.blog-hero-area .contents h2 {
+.blog-hero-area .contents h1 {
   color: #fff;
   font-size: 52px;
   font-weight: 300;
@@ -1707,11 +1646,11 @@ button:focus {
   position: relative;
 }
 
-.whatsapp-modal-header h2 {
+.whatsapp-modal-header h1 {
   margin: 0;
   font-size: 18px;
-  text-align: center; /* Asegurarse de que el texto esté centrado dentro del h2 */
-  width: 100%; /* Asegurarse de que el h2 ocupe todo el ancho disponible */
+  text-align: center; /* Asegurarse de que el texto esté centrado dentro del h1 */
+  width: 100%; /* Asegurarse de que el h1 ocupe todo el ancho disponible */
 }
 
 .whatsapp-modal-close {

@@ -15,7 +15,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=5"
     />
-    <meta name="author" content="AtomicDevs" />
+    <meta name="author" content="We are Atomic Devs an organization and a software company that offer services about develop technology systems for your needs, so we can offer, make and create fit system technology for you." />
+    <meta name="description" content="We are ">
     <title>AtomicDevs</title>
     <link
       rel="stylesheet"
@@ -48,8 +49,137 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Bootrstrap 4.3 END -->
 
-  </head>
+    <style>
+      /* General Styles */
+      html {
+        scroll-behavior: smooth;
+    }
+      .logo-container {
+          transform: scale(.7) !important;
+          margin: 0 !important;
+      }
+      .logo-text {
+          transform: scale(1.2) !important;
+      }
+      .navbar {
+          position: fixed;
+          height: 90px;
+          align-items: center;
+          flex-wrap: nowrap;
+          z-index: 9;
+      }
+      .nav-btn {
+          color: white;
+          font-size: 30px;
+          font-weight: bold;
+          border: none !important;
+          background: transparent;
+          cursor: pointer;
+      }
+      .container-nav {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+      }
 
+      /* Drawer Menu */
+      .drawer {
+          position: fixed;
+          top: 0;
+          left: -250px; /* Oculto inicialmente */
+          width: 250px;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.9);
+          color: white;
+          padding-top: 60px;
+          transition: left 0.3s ease-in-out;
+          z-index: 10;
+      }
+      .drawer a {
+          display: block;
+          padding: 15px;
+          color: white;
+          text-decoration: none;
+          font-size: 18px;
+      }
+      .drawer a:hover {
+          background: rgba(255, 255, 255, 0.2);
+      }
+      .drawer .close-btn {
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          font-size: 30px;
+          cursor: pointer;
+      }
+      /* Mostrar el menú */
+      .drawer.open {
+          left: 0;
+      }
+
+      /* Responsive Styles */
+      @media screen and (max-width: 1200px) {
+          .logo-container {
+              transform: scale(.7) !important;
+          }
+          .logo-text {
+              transform: scale(1.1) !important;
+          }
+      }
+      @media screen and (max-width: 768px) {
+          .logo-container {
+              transform: scale(.9) !important;
+          }
+          .logo-text {
+              transform: scale(1) !important;
+          }
+          .navbar {
+              height: 80px;
+          }
+      }
+      @media screen and (max-width: 480px) {
+          .logo-container {
+              transform: scale(1) !important;
+          }
+          .logo-text {
+              transform: scale(.8) !important;
+          }
+          .navbar {
+              height: 70px;
+          }
+          .nav-btn {
+              transform: scale(.8) !important;
+          }
+      }
+      @media screen and (max-width: 768px) {
+          .drawer {
+              width: 220px;
+          }
+          .drawer a {
+              font-size: 16px;
+              padding: 12px 15px;
+          }
+          .drawer .close-btn {
+              font-size: 25px;
+          }
+      }
+
+      @media screen and (max-width: 480px) {
+          .drawer {
+              width: 200px;
+          }
+          .drawer a {
+              font-size: 15px;
+              padding: 10px 12px;
+          }
+          .drawer .close-btn {
+              font-size: 22px;
+          }
+      }
+  </style>
+  </head>
+  
   <body class="overflow-hidden">
     <!-- Header Section Start -->
     <header id="home" class="hero-area">
@@ -57,17 +187,32 @@
         <span></span>
         <span></span>
       </div>
-      <nav
-        class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar"
-        style="height: 100px;"
-      >
-        <div class="container">
-          <a
-            href="index.html"
-            class="navbar-brand d-flex align-items-center justify-content-center"
-          >
+      <!-- Drawer Menu -->
+      <div id="drawer" class="drawer">
+        <span class="close-btn" onclick="closeDrawer()">&times;</span>
+        <a href="#home">Inicio</a>
+        <a href="#services">Nosotros</a>
+        <a href="#features">Servicios</a>
+        <a href="#showcase">Proyectos</a>
+        <a href="#clients">Clientes</a>
+        <a href="#technologies">Tecnologías</a>
+        <a href="#team">Equipo</a>
+        <a href="#contact">Contacto</a>
+      </div>
+
+      <!-- Botón para abrir el Drawer -->
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div id="nav-content-btn">
+            <button class="btn nav-btn" type="button" onclick="openDrawer()">
+                <i class="lni-menu"></i>
+            </button>
+        </div>
+        <div class="container-nav">
+            <!-- Logo de texto -->
+            <img data-aos="fade-up" src="/img/Title_AtomicDevs_Sin_BG.png" alt="AtomicDevs" class="logo-text" />
             <!-- Logo SVG -->
-            <div class="logo-container" data-aos="fade-up" style="transform: scale(.7);">
+            <!-- Logo SVG -->
+            <div class="logo-container" data-aos="fade-up">
               <svg viewBox="0 0 100 100" class="logo-svg">
                 <g class="shadow">
                   <ellipse cx="50" cy="100" rx="50" ry="5" />
@@ -147,88 +292,42 @@
                 </defs>
               </svg>
             </div>
-            <!-- Logo de texto -->
-            <img
-              data-aos="fade-up"
-              src="/img/Title_AtomicDevs_Sin_BG.png"
-              alt="AtomicDevs"
-              class="logo-text"
-            />
-          </a>
-          <button
-            data-aos="fade-down"
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarCollapse"
-            aria-controls="navbarCollapse"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            style="border: none;"
-          >
-            <i class="lni-menu"></i>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarCollapse"
-          >
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link page-scroll" href="#home">Inicio</a>
-              </li>
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link page-scroll" href="#services">Nosotros</a>
-              </li>
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link page-scroll" href="#features">Servicios</a>
-              </li>
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link page-scroll" href="#showcase">Proyectos</a>
-              </li>
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link page-scroll" href="#clients">Clientes</a>
-              </li>
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link page-scroll" href="#technologies"
-                  >Tecnologías</a
-                >
-              </li>
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link page-scroll" href="#team">Equipo</a>
-              </li>
-              <li class="nav-item" data-aos="fade-up">
-                <a class="nav-link page-scroll" href="#contact">Contacto</a>
-              </li>
-            </ul>
-          </div>
         </div>
       </nav>
       <div class="container">
         <div class="row space-100">
           <!-- Sección de texto -->
-          <div class="col-lg-6 col-md-12 col-xs-12">
+          <div class="col-lg-7 col-md-12 col-xs-12">
             <div class="contents">
-              <h2 class="head-title">
+              <h1 style="font-size: 5vh;">
+                Lidera con AtomicDevs
+              </h1>
+              <!-- <h2 class="head-title">
                 <span data-aos="fade-up" id="typed"></span>
-              </h2>
-              <p data-aos="fade-right">
+              </h2> -->
+              <p style="font-size: 2vh;">
                 Olvida lo monótono y lo ordinario.<br />
                 Impúlsate al siguiente nivel empresarial con tecnología moderna
                 y lidera tus ideas hacia la grandeza.<br />
               </p>
-              <div id="typed-strings">
+              <!-- <p data-aos="fade-right">
+                Olvida lo monótono y lo ordinario.<br />
+                Impúlsate al siguiente nivel empresarial con tecnología moderna
+                y lidera tus ideas hacia la grandeza.<br />
+              </p> -->
+              <!-- <div id="typed-strings">
                 <p>Somos lo que necesitas.</p>
                 <p>Somos evolución.</p>
                 <p>Somos transformación.</p>
                 <p>Somos innovación tecnológica.</p>
                 <p>Lidera con AtomicDevs.</p>
-              </div>
+              </div> -->
             </div>
           </div>
 
           <!-- Imagen -->
           <div
-            class="col-lg-6 col-md-12 col-xs-12 d-flex justify-content-center align-items-center mt-5"
+            class="col-lg-5 col-md-12 col-xs-12 d-flex justify-content-center align-items-center mt-5"
             data-aos="fade-left"
           >
             <img
@@ -570,7 +669,7 @@
                             href="/img/showcase/Proyecto_SupplierCity.png"
                             ><i class="lni-zoom-in"></i
                           ><span hidden>Mostrar</span></a>
-                          <a style="cursor: pointer;"><i class="lni-link"></i></a>
+                          <a href="#" title="Describe about Suppliers City project" style="cursor: pointer;"><i class="lni-link"></i></a>
                         </div>
                       </div>
                     </div>
@@ -1343,7 +1442,7 @@
                 <div class="site-info text-center" data-aos="fade-right">
                   <p>
                     Elaborado con ❤ por
-                    <a style="font-weight: bolder">&copy; 2024 AtomicDevs</a> -
+                    <span style="font-weight: bolder; color: #ddd;">&copy; 2025 AtomicDevs</span> -
                     Todos los derechos reservados - Hermosillo, Sonora, México
                   </p>
                 </div>
@@ -1429,6 +1528,17 @@
       <div class="loader" id="loader-1"></div>
     </div>
     <!-- End Preloader -->
+
+    <!-- JavaScript para manejar el Drawer -->
+    <script>
+      function openDrawer() {
+          document.getElementById("drawer").classList.add("open");
+      }
+
+      function closeDrawer() {
+          document.getElementById("drawer").classList.remove("open");
+      }
+    </script>
 
     <!-- JS VANILLA -->
      <script>
