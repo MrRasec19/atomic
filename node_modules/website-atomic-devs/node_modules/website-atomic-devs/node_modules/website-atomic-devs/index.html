@@ -67,6 +67,7 @@
           align-items: center;
           flex-wrap: nowrap;
           z-index: 9;
+          background-color: #341565;
       }
       .nav-btn {
           color: white;
@@ -75,6 +76,15 @@
           border: none !important;
           background: transparent;
           cursor: pointer;
+          border: solid 1px white !important;
+          padding: 1px 5px;
+          padding-bottom: 0;
+          height: 44px;
+      }
+      .nav-btn:hover {
+        color: #000;
+        border-color: #000 !important;
+        background-color: #5e3a99;
       }
       .container-nav {
           display: flex;
@@ -90,7 +100,7 @@
           left: -250px; /* Oculto inicialmente */
           width: 250px;
           height: 100%;
-          background: rgba(0, 0, 0, 0.9);
+          background: #341565f3;
           color: white;
           padding-top: 60px;
           transition: left 0.3s ease-in-out;
@@ -201,7 +211,7 @@
       </div>
 
       <!-- Botón para abrir el Drawer -->
-      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+      <nav class="navbar fixed-top">
         <div id="nav-content-btn">
             <button class="btn nav-btn" type="button" onclick="openDrawer()">
                 <i class="lni-menu"></i>
